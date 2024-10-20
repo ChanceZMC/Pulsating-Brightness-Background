@@ -1,0 +1,20 @@
+/* Brightness Alternation Call */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* <~~ Start with a darker background! */
+    animation: brightnessPulse 10s infinite alternate ease-in-out;
+}
+
+
+@keyframes brightnessPulse {
+    0% {
+        filter: brightness(0.7); 
+    }
+    50% {
+        filter: brightness(1); 
+    }
+    100% {
+        filter: brightness(0.85); 
+    }
+}
